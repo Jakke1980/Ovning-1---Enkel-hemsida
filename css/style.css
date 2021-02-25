@@ -151,6 +151,10 @@ nav ul li a {
   height: auto;
 }
 
+#main-boka {
+  height: 450px;
+}
+
 #familj {
   margin-left: 20px;
   margin-top: 80px;
@@ -324,6 +328,10 @@ label {
   border-radius: 7px; 
 }
 
+#bookWidget-36690-64319-0-1614087214 {
+  margin-left: 230px;
+  margin-top: 50px;
+}
 
 
 /* Footer */

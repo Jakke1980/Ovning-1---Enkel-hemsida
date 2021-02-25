@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugn & Rum</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body id="body">
+    <div class="container">
+    <header id="info">
+      <a href="tel:+46793484269" id="tel">Tel: +46 79-348 42 69</a>
+      <a href="mailto:info@lugn&rum.se?subject=Förfrågan" id="mail">info@lugn&rum.se</a>  
+    </header>
+
+    <nav>
+      <img src="img/logo2.jpg" id="logo" alt="logo" height="96" width="128">
+      <div class="review">"Fantastikst läge på den Gotländska väskusten. Bra badstrand!"</div>
+      <div class="review">"Mycket trevligt värdpar. Nära till Visby GK med Sveriges bästa 18-hålare."</div>
+      <div class="review">"Fräscht boende med en mysig lanthandel runt hörnet."</div>
+      
+      <br>
+      <h2 id="hotell">Lugn & Rum</h2>
+        <ul class="nav-list">
+            <li><a href="index.html" class="aktiv">Hem</a></li>
+            <li><a href="boka.html">Boka</a></li>
+            <li><a href="bilder.html">Bilder</a></li>
+            <li><a href="attgora.html">Att göra</a></li>
+            <li><a href="omoss.html">Om oss</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+   
+    <main id="main-home">
+     <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="../Övning 1 - Enkel hemsida/img/img4.jpg" alt="utemiljö" width="920" height="500">
+            <div class="text"></div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="../Övning 1 - Enkel hemsida/img/img3.jpg" alt="studio standard" width="920" height="500">
+            <div class="text"></div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="../Övning 1 - Enkel hemsida/img/img2.jpg" alt="studio large" width="920" height="500">
+            <div class="text"></div>
+          </div>
+        <!-- <img class="mySlides" src=">
+        <img class="mySlides" src="../Övning 1 - Enkel hemsida/img/img5.jpg" alt="ladan" width="960" height="600">
+        <img class="mySlides" src=">
+        <img class="mySlides" src=">
+        <img class="mySlides" src="> -->
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 6000); // Change image every 4 seconds
+        }
+        </script>
+
+    </main>
+    
+    <footer>
+
+      <div id="rating">
+        <img src="./img/rating.png" alt="bookin.com 9.2 out of 10 rating" width="345" height="80">
+      </div>
+        <address>
+            Lugn & Rum <br>
+            Västergarn Stelor 153<br>
+            622 30 Gotlands Tofta<br>
+            Sweden
+        </address>
+   
+    </footer>
+  </div>  
+</body>
+</html>

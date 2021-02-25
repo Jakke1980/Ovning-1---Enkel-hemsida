@@ -138,7 +138,8 @@ nav ul li a {
 }
 
 #main-omoss,
-#main-home {
+#main-home,
+#main-boka {
   width: 960px;
   height: 500px;
 }
@@ -166,10 +167,6 @@ nav ul li a {
 margin: 40px 0px 0px 30px;
 width: 200;
 float: left;
-}
-
-.omoss {
-  margin;
 }
 
 #main-kontakt {
